@@ -42,9 +42,9 @@ class RichPrintClient extends PrintClientBase
 	var testClassResultType:TestResultType;
 	var external:ExternalPrintClient;
 	
-	public function new()
+	public function new(?includeIgnoredReport:Bool = true)
 	{
-		super();
+		super(includeIgnoredReport);
 		id = DEFAULT_ID;
 	}
 
